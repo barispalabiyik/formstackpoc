@@ -5,37 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RCN Formstack Query Params POC</title>
     <script type="text/javascript" src=https://rcncapital.formstack.com/forms/js.php/affiliate_form></script>
+    <script defer type="text/javascript" src=script.js></script>
   </head>
   <body style="max-width:900px; margin-inline: auto">
     <noscript><a href=https://rcncapital.formstack.com/forms/affiliate_form title="Online Form">Online Form - Affiliate Form</a></noscript>
-
   </body>
-
-
-  <script>
-    function populateFormWithQueryParams() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const queryParams = ["lead_id", "offer_id", "affiliate_id"];
-
-  queryParams.forEach((param) => {
-    const value = urlParams.get(param);
-    if (value !== null) {
-      const div = document.querySelector(
-        `div[fs-field-validation-name="${param}"]`
-      );
-      if (div) {
-        const inputField = div.querySelector("input");
-        if (inputField) {
-          inputField.value = value;
-        }
-      }
-    }
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  populateFormWithQueryParams();
-});
-
-  </script>
 </html>
