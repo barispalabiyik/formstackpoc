@@ -26,6 +26,23 @@
       overflow-x: hidden;
     }
 
+
+    .rcn-btn-primary {
+      background-color: var(--rcn-primary);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      border-radius: var(--rcn-btn-border-radius);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .rcn-btn-primary:hover {
+      background-color: #fff;
+      color: var(--rcn-primary);
+      border: 2px solid var(--rcn-primary);
+    }
+
     .container {
       max-width: 1200px;
       margin-inline: auto;
@@ -92,7 +109,7 @@
       background-image: url('hero-bg.jpg');
       min-height: 750px;
       background-size: cover;
-      background-repeat: no-repeat;
+      background-position: bottom;
       color: #fff;
       padding-block: 5rem;
       text-align: center;
@@ -106,8 +123,41 @@
     }
 
     .hero-svg-holder {
-      margin-top: -22vw;
+      margin-top: -21.5vw;
       overflow: hidden;
+    }
+
+    .title-section {
+      margin-block: 5rem;
+
+    }
+
+    .title-section h2 {
+      color: var(--rcn-primary);
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .cta {
+      margin-block: 10rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      margin-inline: auto;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      color: var(--rcn-primary);
+
+    }
+
+    .cta img {
+      width: 100%;
+      height: auto;
     }
 
     .form-section {
@@ -176,6 +226,22 @@
       </path>
     </svg>
   </div>
+
+  <section class="title-section">
+    <h2>RCN Capital Provides Exclusive Financing <br> for Real Estate Investors</h2>
+  </section>
+
+
+  <section class="cta">
+    <div class="text-content">
+      <h2>Find Out How to Qualify</h2>
+      <p>Click the button below to download our Checklist!</p>
+      <button class="rcn-btn-primary">Download Now</button>
+    </div>
+    <div class="image-content">
+      <img src="phone.png" alt="" srcset="">
+    </div>
+  </section>
   <section class="form-section">
 
     <div class="formstack-container">
