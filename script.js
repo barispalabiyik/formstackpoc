@@ -18,8 +18,26 @@ function populateFormWithQueryParams() {
   });
 }
 
+const toggleMenu = () => {
+  const menu = document.querySelector(".menu-icon");
+  const close = document.querySelector(".close-menu");
+  const nav = document.querySelector(".rcn-mobile-menu");
+  const body = document.querySelector("body");
+
+  menu.addEventListener("click", () => {
+    nav.classList.add("show-element");
+    body.classList.add("overflow-hidden");
+  });
+
+  close.addEventListener("click", () => {
+    nav.classList.remove("show-element");
+    body.classList.remove("overflow-hidden");
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   populateFormWithQueryParams();
+  toggleMenu();
 });
 
 const ICONS = [
