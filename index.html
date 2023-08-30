@@ -316,6 +316,79 @@
       font-weight: bolder;
     }
 
+    /*Form Styles*/
+
+    form#fsForm5412224 {
+      background-color: white;
+      border-radius: 10px;
+      border: 2px var(--rcn-primary) solid;
+      box-shadow: 0px 0px 20px rgba(165, 165, 165, 0.3);
+      padding: 35px;
+    }
+
+    #formstack .fsRowBody input[type=text],
+    #formstack .fsRowBody input[type=email],
+    #formstack .fsRowBody input[type=number],
+    #formstack .fsRowBody input[type=tel],
+    #formstack .fsForm select,
+    #formstack .fsForm textarea {
+      border-radius: 10px;
+      background-color: #ededed;
+      width: 100% !important;
+    }
+
+    .fsFieldRow .fsFieldCell.fsSpan66 {
+      width: 100% !important;
+    }
+
+    #formstack div.fsError {
+      border: 1px solid #ce5f6d;
+      border-radius: 10px;
+      color: #ce5f6d;
+      background-color: #fae9e9;
+    }
+
+    #formstack .fieldset-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 15px;
+    }
+
+    #formstack .fieldset-content>label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      padding: 0.5rem;
+      background-color: #ededed;
+      border-radius: 10px;
+    }
+
+    #formstack .fieldset-content>label:hover {
+      cursor: pointer;
+      background-color: rgb(201, 201, 201);
+    }
+
+    #formstack input#fsSubmitButton5412224 {
+      border-radius: 20px !important;
+      width: 100%;
+      font-size: x-large !important;
+      padding: 20px;
+      background-color: var(--rcn-primary) !important;
+      color: white;
+      border: 2px solid var(--rcn-primary) !important;
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    #formstack input#fsSubmitButton5412224:hover {
+      background-color: white !important;
+      color: var(--rcn-primary) !important;
+    }
+
+    .fsValidationError {
+      border-radius: 10px;
+    }
+
     @media screen and (max-width: 1248px) {
 
       .svg-holder,
@@ -351,6 +424,10 @@
         list-style: none;
       }
 
+      .footer-menu {
+        grid-template-columns: 1fr;
+      }
+
       .cta {
         display: flex;
         flex-direction: column;
@@ -366,8 +443,10 @@
         display: block;
       }
 
-      .logos {
-        flex-direction: column;
+      #formstack .fieldset-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
       }
     }
   </style>
@@ -383,7 +462,7 @@
       <li><a href="https://rcncapital.com/document-library/">resources</a></li>
       <li><a href="https://rcncapital.com/contact/">contact</a></li>
       <li><a href="https://rcncapital.com/application/">apply now</a></li>
-      <li class="rcn-btn-primary"><a href="https://rcncapital.com/login/">login</a></li>
+      <li class="rcn-btn-primary"><a href="https://rcncapital.com/login">login</a></li>
     </ul>
 
     <div class="menu-icon">
@@ -395,13 +474,13 @@
 
     <ul class="rcn-mobile-menu">
       <span class="close-menu">X</span>
-      <li>loan programs</li>
-      <li>partners</li>
-      <li>about</li>
-      <li>resources</li>
-      <li>contact</li>
-      <li>apply now</li>
-      <li class="rcn-btn-primary">login</li>
+      <li><a href="https://rcncapital.com/loan-programs">loan programs</a> </li>
+      <li><a href="https://rcncapital.com/broker-referral-program">partners</a></li>
+      <li><a href="https://rcncapital.com/about-rcn-capital/">about</a></li>
+      <li><a href="https://rcncapital.com/document-library/">resources</a></li>
+      <li><a href="https://rcncapital.com/contact/">contact</a></li>
+      <li><a href="https://rcncapital.com/application/">apply now</a></li>
+      <li class="rcn-btn-primary"><a href="https://rcncapital.com/login">login</a></li>
     </ul>
   </header>
   <section class="hero-section">
@@ -434,7 +513,7 @@
     <h2>Have a Deal? Apply Now</h2>
   </section>
 
-  <section class="form-section">
+  <section id="formstack" class="form-section">
 
     <div class="formstack-container">
       <script type="text/javascript" src=https://rcncapital.formstack.com/forms/js.php/affiliate_form></script>
