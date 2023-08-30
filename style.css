@@ -413,6 +413,10 @@
             font-size: 2rem;
         }
 
+        .hero-section {
+            min-height: 350px;
+        }
+
         .logos {
             justify-content: center;
 
