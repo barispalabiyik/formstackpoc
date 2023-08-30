@@ -27,6 +27,19 @@
       position: relative;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer li>a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-content svg {
+      max-width: 25px;
+    }
+
 
     .rcn-btn-primary {
       background-color: var(--rcn-primary);
@@ -275,10 +288,17 @@
 
     .logos {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       gap: 2rem;
       list-style: none;
       padding-inline-start: 0px;
+    }
+
+    .logos>li {
+      border: solid 2px white;
+      border-radius: 100%;
+      padding: 6px;
+      padding-bottom: 3px;
     }
 
     .show-element {
@@ -306,6 +326,11 @@
 
       .hero-section h1 {
         font-size: 2rem;
+      }
+
+      .logos {
+        justify-content: center;
+
       }
 
       .footer-content {
@@ -352,13 +377,13 @@
   <header class="container">
     <img src="rcn-logo.png" alt="" srcset="">
     <ul class="rcn-menu">
-      <li>loan programs</li>
-      <li>partners</li>
-      <li>about</li>
-      <li>resources</li>
-      <li>contact</li>
-      <li>apply now</li>
-      <li class="rcn-btn-primary">login</li>
+      <li><a href="https://rcncapital.com/loan-programs">loan programs</a> </li>
+      <li><a href="https://rcncapital.com/broker-referral-program">partners</a></li>
+      <li><a href="https://rcncapital.com/about-rcn-capital/">about</a></li>
+      <li><a href="https://rcncapital.com/document-library/">resources</a></li>
+      <li><a href="https://rcncapital.com/contact/">contact</a></li>
+      <li><a href="https://rcncapital.com/application/">apply now</a></li>
+      <li class="rcn-btn-primary"><a href="https://rcncapital.com/login/">login</a></li>
     </ul>
 
     <div class="menu-icon">
@@ -404,6 +429,11 @@
       <img src="phone.png" alt="" srcset="">
     </div>
   </section>
+
+  <section class="title-section">
+    <h2>Have a Deal? Apply Now</h2>
+  </section>
+
   <section class="form-section">
 
     <div class="formstack-container">
@@ -427,15 +457,21 @@
           <img src="rcn-footer-white.png" alt="" srcset="">
           <h4>CONNECT WITH RCN CAPITAL</h4>
           <ul class="logos">
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>LinkedIn</li>
-            <li>Instagram</li>
-            <li>YouTube</li>
+            <li><a href="https://www.linkedin.com/company/rcncapital/"><span class="linkedin"></span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCYXco_X3Yptigd_t5Q5smsA"><span class="youtube"></span>
+              </a>
+            </li>
+            <li><a href="https://twitter.com/rcn_capital"><span class="twitter"></span>
+              </a></a></li>
+            <li><a href="https://www.facebook.com/RCNCapital/"><span class="facebook"></span>
+              </a></a></li>
+
           </ul>
           <h4>CONTACT US</h4>
-          <p>Phone: 860.432.5858</p>
-          <p>Email: INFO@RCNCAPITAL.COM </p>
+          <p><a href="tel:860.432.5858"><span class="phone"></span>860.432.5858</a></p>
+          <p><a href="mailto:INFO@RCNCAPITAL.COM"><span class="email"></span>INFO@RCNCAPITAL.COM</a></p>
+
+
         </div>
         <div>
           <div class="footer-menu">
@@ -444,19 +480,18 @@
 
               <div class="footer-navs">
                 <ul>
-                  <li>join our team</li>
-                  <li>latest news</li>
-                  <li>recent loans</li>
-                  <li>FAQs</li>
-                  <li>Privacy Policy</li>
+                  <li><a href="https://rcncapital.com/join-our-team/">join our team</a></li>
+                  <li><a href="https://rcncapital.com/company-news/">latest news</a></li>
+                  <li><a href="https://rcncapital.com/recent-loans/">recent loans</a></li>
+                  <li><a href="https://rcncapital.com/rcn-capital-faqs/">FAQs</a></li>
+                  <li><a href="https://rcncapital.com/privacy-policy/">Privacy Policy</a></li>
                 </ul>
                 <ul>
-                  <li>loan programs</li>
-                  <li>referral program</li>
-                  <li>document library</li>
-                  <li>resources</li>
-                  <li>apply now</li>
-                  <li>terms of use</li>
+                  <li><a href="https://rcncapital.com/loan-programs/">loan programs</a></li>
+                  <li><a href="https://rcncapital.com/broker-referral-program/">referral program</a></li>
+                  <li><a href="https://rcncapital.com/document-library/">document library</a></li>
+                  <li><a href="https://rcncapital.com/application/">apply now</a></li>
+                  <li><a href="https://rcncapital.com/terms-use/">terms of use</a></li>
                 </ul>
               </div>
 
@@ -466,7 +501,9 @@
               <p>Be the First to Know
                 About Program Updates
                 & Special Offers!</p>
-              <button class="rcn-btn-secondary"> SIGN UP</button>
+              <a target="_blank"
+                href="https://visitor.r20.constantcontact.com/manage/optin?v=001PkT5eHO4C2LoygZIxxgy4vDMHhwVH26hJX7GYpll_g6aZDC4eJ4c_PEJqey7PbiZej6OfHJ2ygQii8Qhs9dBx-u8QzleEpRPxqw6I4jeG-BGfOzvLFslEgLHYsSurZcLSb4eijtfZKVd9Dh-N6CIRK2AI0rWNmR4"><button
+                  class="rcn-btn-secondary"> SIGN UP</button></a>
             </div>
           </div>
 
